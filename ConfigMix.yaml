@@ -1,1 +1,501 @@
-
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7874
+  nameserver:
+    - 8.8.8.8
+    - 1.0.0.1
+    - https://dns.google/dns-query
+  fallback:
+    - 1.1.1.1
+    - 8.8.4.4
+    - https://cloudflare-dns.com/dns-query
+    - 112.215.203.254
+  default-nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+    - 112.215.203.254
+proxies:
+  - name: sg1.31vpn.com
+    server: api.midtrans.com.iptunnels.com
+    port: 443
+    type: vmess
+    uuid: bb4b9e95-c9ff-411c-9a47-483570e169aa
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg1.31vpn.com
+    network: ws
+    ws-opts:
+      path: /fastssh/riqomaf/63587aae609ab/
+      headers:
+        Host: sg1.31vpn.com
+    udp: true
+  - name: sg1.31vpn.com 2
+    server: api.midtrans.com.iptunnels.com
+    port: 80
+    type: vmess
+    uuid: bb4b9e95-c9ff-411c-9a47-483570e169aa
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg1.31vpn.com
+    network: ws
+    ws-opts:
+      path: /fastssh/riqomaf/63587aae609ab/
+      headers:
+        Host: sg1.31vpn.com
+    udp: true
+  - name: sg-lb.vhax.net
+    server: api.midtrans.com.iptunnels.com
+    port: 443
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/arief.furqon/63587deeac0ab/
+      headers:
+        Host: sg-lb.vhax.net
+    udp: true
+  - name: sg-lb.vhax.net 2
+    server: api.midtrans.com.iptunnels.com
+    port: 80
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/arief.furqon/63587deeac0ab/
+      headers:
+        Host: sg-lb.vhax.net
+    udp: true
+  - name: id-lb.vhax.net
+    server: api.midtrans.com.iptunnels.com
+    port: 443
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/Jajdh/63587e382f56e/
+      headers:
+        Host: id-lb.vhax.net
+    udp: true
+  - name: id-lb.vhax.net 2
+    server: api.midtrans.com.iptunnels.com
+    port: 80
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/Jajdh/63587e382f56e/
+      headers:
+        Host: id-lb.vhax.net
+    udp: true
+  - name: sg1-v2ray.sshkit.org
+    server: api.midtrans.com.iptunnels.com
+    port: 443
+    type: vmess
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg1-v2ray.sshkit.org
+    network: ws
+    ws-opts:
+      path: /sshkit/218931122/634f563fd1e86/
+      headers:
+        Host: sg1-v2ray.sshkit.org
+    udp: true
+  - name: sg1-v2ray.sshkit.org 2
+    server: api.midtrans.com.iptunnels.com
+    port: 80
+    type: vmess
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg1-v2ray.sshkit.org
+    network: ws
+    ws-opts:
+      path: /sshkit/218931122/634f563fd1e86/
+      headers:
+        Host: sg1-v2ray.sshkit.org
+    udp: true
+  - name: sg4-v2ray.sshkit.org
+    server: api.midtrans.com.iptunnels.com
+    port: 443
+    type: vmess
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg4-v2ray.sshkit.org
+    network: ws
+    ws-opts:
+      path: /sshkit/218931122/634f5698ba2f2/
+      headers:
+        Host: sg4-v2ray.sshkit.org
+    udp: true
+  - name: sg4-v2ray.sshkit.org 2
+    server: api.midtrans.com.iptunnels.com
+    port: 80
+    type: vmess
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg4-v2ray.sshkit.org
+    network: ws
+    ws-opts:
+      path: /sshkit/218931122/634f5698ba2f2/
+      headers:
+        Host: sg4-v2ray.sshkit.org
+    udp: true
+  - name: sg1-v2ray.sshkit.org 3
+    server: api.midtrans.com.iptunnels.com
+    port: 443
+    type: vmess
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg1-v2ray.sshkit.org
+    network: ws
+    ws-opts:
+      path: /sshkit/218931122/634f563fd1e86/
+      headers:
+        Host: sg1-v2ray.sshkit.org
+    udp: true
+  - name: sg1.31vpn.com 3
+    server: cf-vod.nimo.tv
+    port: 443
+    type: vmess
+    uuid: bb4b9e95-c9ff-411c-9a47-483570e169aa
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg1.31vpn.com
+    network: ws
+    ws-opts:
+      path: /fastssh/riqomaf/63587aae609ab/
+      headers:
+        Host: sg1.31vpn.com
+    udp: true
+  - name: sg1.31vpn.com 4
+    server: cf-vod.nimo.tv
+    port: 80
+    type: vmess
+    uuid: bb4b9e95-c9ff-411c-9a47-483570e169aa
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg1.31vpn.com
+    network: ws
+    ws-opts:
+      path: /fastssh/riqomaf/63587aae609ab/
+      headers:
+        Host: sg1.31vpn.com
+    udp: true
+  - name: sg-lb.vhax.net 3
+    server: cf-vod.nimo.tv
+    port: 443
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/arief.furqon/63587deeac0ab/
+      headers:
+        Host: sg-lb.vhax.net
+    udp: true
+  - name: sg-lb.vhax.net 4
+    server: cf-vod.nimo.tv
+    port: 80
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/arief.furqon/63587deeac0ab/
+      headers:
+        Host: sg-lb.vhax.net
+    udp: true
+  - name: id-lb.vhax.net 3
+    server: cf-vod.nimo.tv
+    port: 443
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/Jajdh/63587e382f56e/
+      headers:
+        Host: id-lb.vhax.net
+    udp: true
+  - name: id-lb.vhax.net 4
+    server: cf-vod.nimo.tv
+    port: 80
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/Jajdh/63587e382f56e/
+      headers:
+        Host: id-lb.vhax.net
+    udp: true
+  - name: sg1-v2ray.sshkit.org 4
+    server: cf-vod.nimo.tv
+    port: 443
+    type: vmess
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg1-v2ray.sshkit.org
+    network: ws
+    ws-opts:
+      path: /sshkit/218931122/634f563fd1e86/
+      headers:
+        Host: sg1-v2ray.sshkit.org
+    udp: true
+  - name: sg1-v2ray.sshkit.org 5
+    server: cf-vod.nimo.tv
+    port: 80
+    type: vmess
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg1-v2ray.sshkit.org
+    network: ws
+    ws-opts:
+      path: /sshkit/218931122/634f563fd1e86/
+      headers:
+        Host: sg1-v2ray.sshkit.org
+    udp: true
+  - name: sg4-v2ray.sshkit.org 3
+    server: cf-vod.nimo.tv
+    port: 443
+    type: vmess
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg4-v2ray.sshkit.org
+    network: ws
+    ws-opts:
+      path: /sshkit/218931122/634f5698ba2f2/
+      headers:
+        Host: sg4-v2ray.sshkit.org
+    udp: true
+  - name: sg4-v2ray.sshkit.org 4
+    server: cf-vod.nimo.tv
+    port: 80
+    type: vmess
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg4-v2ray.sshkit.org
+    network: ws
+    ws-opts:
+      path: /sshkit/218931122/634f5698ba2f2/
+      headers:
+        Host: sg4-v2ray.sshkit.org
+    udp: true
+  - name: sg1-v2ray.sshkit.org 6
+    server: cf-vod.nimo.tv
+    port: 443
+    type: vmess
+    uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg1-v2ray.sshkit.org
+    network: ws
+    ws-opts:
+      path: /sshkit/218931122/634f563fd1e86/
+      headers:
+        Host: sg1-v2ray.sshkit.org
+    udp: true
+proxy-groups:
+  - name: FASTSSH-SSHKIT-HOWDY
+    type: select
+    proxies:
+      - sg1.31vpn.com
+      - sg1.31vpn.com 2
+      - sg-lb.vhax.net
+      - sg-lb.vhax.net 2
+      - id-lb.vhax.net
+      - id-lb.vhax.net 2
+      - sg1-v2ray.sshkit.org
+      - sg1-v2ray.sshkit.org 2
+      - sg4-v2ray.sshkit.org
+      - sg4-v2ray.sshkit.org 2
+      - sg1-v2ray.sshkit.org 3
+      - sg1.31vpn.com 3
+      - sg1.31vpn.com 4
+      - sg-lb.vhax.net 3
+      - sg-lb.vhax.net 4
+      - id-lb.vhax.net 3
+      - id-lb.vhax.net 4
+      - sg1-v2ray.sshkit.org 4
+      - sg1-v2ray.sshkit.org 5
+      - sg4-v2ray.sshkit.org 3
+      - sg4-v2ray.sshkit.org 4
+      - sg1-v2ray.sshkit.org 6
+      - LOAD-BALANCE
+      - BEST-PING
+      - FALLBACK
+      - DIRECT
+  - name: LOAD-BALANCE
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://hi.bonds.id/ping
+    interval: 300
+    proxies:
+      - sg1.31vpn.com
+      - sg1.31vpn.com 2
+      - sg-lb.vhax.net
+      - sg-lb.vhax.net 2
+      - id-lb.vhax.net
+      - id-lb.vhax.net 2
+      - sg1-v2ray.sshkit.org
+      - sg1-v2ray.sshkit.org 2
+      - sg4-v2ray.sshkit.org
+      - sg4-v2ray.sshkit.org 2
+      - sg1-v2ray.sshkit.org 3
+      - sg1.31vpn.com 3
+      - sg1.31vpn.com 4
+      - sg-lb.vhax.net 3
+      - sg-lb.vhax.net 4
+      - id-lb.vhax.net 3
+      - id-lb.vhax.net 4
+      - sg1-v2ray.sshkit.org 4
+      - sg1-v2ray.sshkit.org 5
+      - sg4-v2ray.sshkit.org 3
+      - sg4-v2ray.sshkit.org 4
+      - sg1-v2ray.sshkit.org 6
+  - name: BEST-PING
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 50
+    proxies:
+      - sg1.31vpn.com
+      - sg1.31vpn.com 2
+      - sg-lb.vhax.net
+      - sg-lb.vhax.net 2
+      - id-lb.vhax.net
+      - id-lb.vhax.net 2
+      - sg1-v2ray.sshkit.org
+      - sg1-v2ray.sshkit.org 2
+      - sg4-v2ray.sshkit.org
+      - sg4-v2ray.sshkit.org 2
+      - sg1-v2ray.sshkit.org 3
+      - sg1.31vpn.com 3
+      - sg1.31vpn.com 4
+      - sg-lb.vhax.net 3
+      - sg-lb.vhax.net 4
+      - id-lb.vhax.net 3
+      - id-lb.vhax.net 4
+      - sg1-v2ray.sshkit.org 4
+      - sg1-v2ray.sshkit.org 5
+      - sg4-v2ray.sshkit.org 3
+      - sg4-v2ray.sshkit.org 4
+      - sg1-v2ray.sshkit.org 6
+  - name: FALLBACK
+    type: fallback
+    url: http://hi.bonds.id/ping
+    interval: 300
+    proxies:
+      - sg1.31vpn.com
+      - sg1.31vpn.com 2
+      - sg-lb.vhax.net
+      - sg-lb.vhax.net 2
+      - id-lb.vhax.net
+      - id-lb.vhax.net 2
+      - sg1-v2ray.sshkit.org
+      - sg1-v2ray.sshkit.org 2
+      - sg4-v2ray.sshkit.org
+      - sg4-v2ray.sshkit.org 2
+      - sg1-v2ray.sshkit.org 3
+      - sg1.31vpn.com 3
+      - sg1.31vpn.com 4
+      - sg-lb.vhax.net 3
+      - sg-lb.vhax.net 4
+      - id-lb.vhax.net 3
+      - id-lb.vhax.net 4
+      - sg1-v2ray.sshkit.org 4
+      - sg1-v2ray.sshkit.org 5
+      - sg4-v2ray.sshkit.org 3
+      - sg4-v2ray.sshkit.org 4
+      - sg1-v2ray.sshkit.org 6
+rules:
+  - MATCH,FASTSSH-SSHKIT-HOWDY
