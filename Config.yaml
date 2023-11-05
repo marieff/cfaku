@@ -67,11 +67,13 @@ dns:
 
 proxy-providers:
   VVIP-IPTUNNELS-FREE:
-    type: file
+    type: http
+    url: "http://fool.azurewebsites.net/get?cc=SG,ID&mode=cdn&pass=74a12fd6&format=clash&cdn=ilmupedia.mdevz.biz.id"
+    interval: 3600
     path: "./proxy_provider/vvip-free.yaml"
     health-check:
       enable: true
-      url: https://cp.cloudflare.com/generate_204
+      url: https://api.v2fly.org/checkConnection.svgz
       interval: 180
   VVIP-IPTUNNELS-VIP:
     type: file
