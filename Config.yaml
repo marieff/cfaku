@@ -91,18 +91,36 @@ proxy-providers:
       interval: 180
       
 rule-providers:
-  Whatsapp:
-    type: file
-    behavior: classical
-    path: "./Whatsapp.yaml"
+  rule_Whatsapp:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_whatsapp.yaml
+    path: "./rules_whatsapp.yaml"
+    interval: 86400
   #rule_basicads:
-    #type: file
-    #behavior: classical
+    #type: http
+    #behavior: domain
+    #url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_basicads.yaml
     #path: "./rule_basicads.yaml"
+    #interval: 86400
   rule_portgames:
-    type: file
-    behavior: classical
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_portgames.yaml
     path: "./rule_portgames.yaml"
+    interval: 86400
+  rule_bank-id:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_bank-id.yaml
+    path: "./rule_bank-id.yaml"
+    interval: 86400
+  rule_indo:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_indo.yaml
+    path: "./rule_indo.yaml"
+    interval: 86400
     
 proxy-groups:
 - name: Global
@@ -178,6 +196,6 @@ proxy-groups:
 
 rules:
 #- RULE-SET,rule_basicads,AdBlock
-- RULE-SET,Whatsapp,Select_VIP
+- RULE-SET,rule_whatsapp,Select_VIP
 - RULE-SET,rule_portgames,Select_VIP
 - MATCH,Global
