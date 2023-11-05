@@ -93,7 +93,7 @@ proxy-providers:
       interval: 180
       
 rule-providers:
-  rule_Whatsapp:
+  rule_whatsapp:
     type: http
     behavior: domain
     url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_whatsapp.yaml
