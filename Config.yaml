@@ -150,12 +150,10 @@ proxy-groups:
   #- REJECT
   #- Global
 - name: Select_VIP
-  type: fallback
+  type: select
   disable-udp: false
   use:
   - VVIP-IPTUNNELS-VIP
-  url: http://www.gstatic.com/generate_204
-  interval: 300
 - name: LOAD-BALANCE
   type: load-balance
   strategy: round-robin
