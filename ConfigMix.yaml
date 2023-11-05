@@ -31,7 +31,7 @@ dns:
     - 8.8.8.8
     - 1.1.1.1
     - 112.215.203.254
-proxies:
+proxy-providers:
   - name: sg1.31vpn.com
     server: api.midtrans.com.iptunnels.com
     port: 443
