@@ -152,6 +152,12 @@ proxy-groups:
 - name: Select_VIP
   type: select
   disable-udp: false
+  proxies:
+  - BEST-PING
+  - LOAD-BALANCE
+  - FALLBACK
+  - PROXY-CHAIN
+  - REJECT
   use:
   - VVIP-IPTUNNELS-VIP
 - name: LOAD-BALANCE
