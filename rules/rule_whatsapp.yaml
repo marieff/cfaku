@@ -11,3 +11,6 @@ payload:
   - DOMAIN-SUFFIX,whatsapp.org
   - DOMAIN-SUFFIX,whatsapp.tv
   - DOMAIN-SUFFIX,whatsappbrand.com
+  - DOMAIN-SUFFIX,whatsapp.biz
+  - DOMAIN,graph.facebook.com
+  - DOMAIN-SUFFIX,bintray.com
