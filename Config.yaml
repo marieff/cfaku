@@ -95,31 +95,31 @@ proxy-providers:
 rule-providers:
   rule_whatsapp:
     type: http
-    behavior: domain
+    behavior: classical
     url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_whatsapp.yaml
     path: "./rule_whatsapp.yaml"
     interval: 86400
   #rule_basicads:
     #type: http
-    #behavior: domain
+    #behavior: classical
     #url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_basicads.yaml
     #path: "./rule_basicads.yaml"
     #interval: 86400
   rule_portgames:
     type: http
-    behavior: domain
+    behavior: classical
     url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_portgames.yaml
     path: "./rule_portgames.yaml"
     interval: 86400
   rule_bank-id:
     type: http
-    behavior: domain
+    behavior: classical
     url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_bank-id.yaml
     path: "./rule_bank-id.yaml"
     interval: 86400
   rule_indo:
     type: http
-    behavior: domain
+    behavior: classical
     url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_indo.yaml
     path: "./rule_indo.yaml"
     interval: 86400
