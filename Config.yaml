@@ -97,7 +97,7 @@ rule-providers:
     type: http
     behavior: domain
     url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_whatsapp.yaml
-    path: "./rules_whatsapp.yaml"
+    path: "./rule_whatsapp.yaml"
     interval: 86400
   #rule_basicads:
     #type: http
