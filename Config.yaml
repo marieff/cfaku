@@ -68,7 +68,7 @@ dns:
 proxy-providers:
   VVIP-IPTUNNELS-FREE:
     type: http
-    url: "https://raw.githubusercontent.com/marieff/cfaku/main/proxy/vvip-free.yaml.txt"
+    url: "https://raw.githubusercontent.com/marieff/cfaku/main/proxy/vvip-free.yaml"
     interval: 3600
     path: "./proxy_provider/vvip-free.yaml"
     health-check:
