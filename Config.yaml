@@ -19,7 +19,7 @@ dns:
   enable: true
   ipv6: false
   use-host: true
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip 
   listen: 0.0.0.0:7874
   nameserver:
   - 8.8.8.8
