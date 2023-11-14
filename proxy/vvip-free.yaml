@@ -554,3 +554,18 @@ proxies:
     headers:
      Host: ext61.zxv.biz.id
   udp: true
+- name: WebHorizon SG ext62.zxv.biz.id
+  server: ilmupedia.mdevz.biz.id
+  port: 443
+  type: vless
+  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: ext62.zxv.biz.id
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+     Host: ext62.zxv.biz.id
+  udp: true
