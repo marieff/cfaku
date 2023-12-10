@@ -1,9 +1,9 @@
 proxies:
 - name: Incapsula ID net1.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -15,10 +15,10 @@ proxies:
      Host: net1.ntr.biz.id
   udp: true
 - name: Zhejiang ID net2.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -30,10 +30,10 @@ proxies:
      Host: net2.ntr.biz.id
   udp: true
 - name: Tencent SG net3.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -45,10 +45,10 @@ proxies:
      Host: net3.ntr.biz.id
   udp: true
 - name: Linode SG net4.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -60,10 +60,10 @@ proxies:
      Host: net4.ntr.biz.id
   udp: true
 - name: Hosthatch SG net5.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -75,10 +75,10 @@ proxies:
      Host: net5.ntr.biz.id
   udp: true
 - name: Global SG net6.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -90,10 +90,10 @@ proxies:
      Host: net6.ntr.biz.id
   udp: true
 - name: Webhorizon SG net7.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -105,10 +105,10 @@ proxies:
      Host: net7.ntr.biz.id
   udp: true
 - name: Centerhop SG net8.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -120,10 +120,10 @@ proxies:
      Host: net8.ntr.biz.id
   udp: true
 - name: Alibaba SG net9.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -135,10 +135,10 @@ proxies:
      Host: net9.ntr.biz.id
   udp: true
 - name: Digital Ocean SG net10.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -150,10 +150,10 @@ proxies:
      Host: net10.ntr.biz.id
   udp: true
 - name: M247 SG net16.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -165,10 +165,10 @@ proxies:
      Host: net16.ntr.biz.id
   udp: true
 - name: Amazon SG net17.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -180,10 +180,10 @@ proxies:
      Host: net17.ntr.biz.id
   udp: true
 - name: Vultr SG net18.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -195,10 +195,10 @@ proxies:
      Host: net18.ntr.biz.id
   udp: true
 - name: Datacamp SG net19.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -210,10 +210,10 @@ proxies:
      Host: net19.ntr.biz.id
   udp: true
 - name: HostHatch SG net20.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -225,10 +225,10 @@ proxies:
      Host: net20.ntr.biz.id
   udp: true
 - name: Akile SG net21.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -240,10 +240,10 @@ proxies:
      Host: net21.ntr.biz.id
   udp: true
 - name: AOFEI SG net22.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -255,10 +255,10 @@ proxies:
      Host: net22.ntr.biz.id
   udp: true
 - name: Akari SG net23.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -270,10 +270,10 @@ proxies:
      Host: net23.ntr.biz.id
   udp: true
 - name: BELNET SG net24.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -285,10 +285,10 @@ proxies:
      Host: net24.ntr.biz.id
   udp: true
 - name: GCore SG net25.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -300,10 +300,10 @@ proxies:
      Host: net25.ntr.biz.id
   udp: true
 - name: Hostinger SG net26.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
@@ -315,10 +315,10 @@ proxies:
      Host: net26.ntr.biz.id
   udp: true
 - name: Kaopu SG net27.ntr.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
-  uuid: 4dba2b4a-d76f-429c-8547-0fcec7430356
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
   cipher: auto
   tls: true
   skip-cert-verify: true
