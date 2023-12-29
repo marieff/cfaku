@@ -329,3 +329,93 @@ proxies:
      headers:
         Host: net27.zxv.biz.id
   udp: true
+- name: Oracle Corporation SG net28.zxv.biz.id
+  server: ilmupedia.mdevz.biz.id
+  port: 443
+  type: vless
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: net28.zxv.biz.id
+  network: ws
+  ws-opts:
+     path: /?ed=2048
+     headers:
+        Host: net28.zxv.biz.id
+  udp: true
+- name: Google SG net29.zxv.biz.id
+  server: ilmupedia.mdevz.biz.id
+  port: 443
+  type: vless
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: net29.zxv.biz.id
+  network: ws
+  ws-opts:
+     path: /?ed=2048
+     headers:
+        Host: net29.zxv.biz.id
+  udp: true
+- name: Tencet SG net30.zxv.biz.id
+  server: ilmupedia.mdevz.biz.id
+  port: 443
+  type: vless
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: net30.zxv.biz.id
+  network: ws
+  ws-opts:
+     path: /?ed=2048
+     headers:
+        Host: net30.zxv.biz.id
+  udp: true
+- name: Linode SG net32.zxv.biz.id
+  server: ilmupedia.mdevz.biz.id
+  port: 443
+  type: vless
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: net32.zxv.biz.id
+  network: ws
+  ws-opts:
+     path: /?ed=2048
+     headers:
+        Host: net32.zxv.biz.id
+  udp: true
+- name: Neustar SG net33.zxv.biz.id
+  server: ilmupedia.mdevz.biz.id
+  port: 443
+  type: vless
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: net33.zxv.biz.id
+  network: ws
+  ws-opts:
+     path: /?ed=2048
+     headers:
+        Host: net33.zxv.biz.id
+  udp: true
+- name: Akamai ID x1.merkuri.cloud
+  server: ilmupedia.mdevz.biz.id
+  port: 443
+  type: vless
+  uuid: e2443e49-e0ce-4628-808f-76469b53cf66
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: x1.merkuri.cloud
+  network: ws
+  ws-opts:
+     path: /?ed=2048
+     headers:
+        Host: x1.merkuri.cloud
+  udp: true
