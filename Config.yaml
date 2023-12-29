@@ -3,39 +3,68 @@ socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
 tproxy-port: 7895
-ipv6: false
-mode: rule
-log-level: info
+geodata-mode: true
+geodata-loader: memconservative
+tcp-concurrent: true
+find-process-mode: 'off'
 allow-lan: true
-external-controller: 0.0.0.0:9090
-secret: derisamedia
 bind-address: "*"
-unified-delay: true
+mode: rule
+log-level: silent
+ipv6: false
+unified-delay: false
+global-client-fingerprint: none
+keep-alive-interval: 15
+external-controller: 0.0.0.0:9090
+external-ui: "/usr/share/openclash/ui"
+secret: "123456"
 profile:
   store-selected: true
-  store-fakeip: true
-  store-fake-ip: true
+  store-fake-ip: false
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    TLS:
+      ports: [443, 8443]
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+  force-domain:
+  - "+.netflix.com"
+  - "+.nflxvideo.net"
+  - "+.amazonaws.com"
+  - "+.media.dssott.com"
+  skip-domain:
+  - "+.apple.com"
+  - Mijia Cloud
+  - "+.jd.com"
+  - dlg.io.mi.com
 dns:
   enable: true
-  ipv6: false
-  use-host: true
-  enhanced-mode: fake-ip
   listen: 0.0.0.0:7874
-  nameserver:
-  - 8.8.8.8
-  - 1.0.0.1
-  - https://dns.google/dns-query
-  fallback:
-  - 1.1.1.1
-  - 8.8.4.4
-  - https://cloudflare-dns.com/dns-query
-  - 112.215.203.254
+  ipv6: false
+  prefer-h3: false
+  use-hosts: true
   default-nameserver:
+  - 1.1.1.1
+  - 1.0.0.1
   - 8.8.8.8
+  - 8.8.4.4
+  - 192.168.8.1
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
   - 1.1.1.1
-  - 112.215.203.254
+  - 8.8.8.8
+  - 9.9.9.9
+  - 192.168.8.1
+  nameserver-policy:
+  geosite:oisd-full,rule-ads: rcode://success
   proxy-server-nameserver:
-  - 1.1.1.1
+  - 1.0.0.1
+  - 8.8.4.4
   fake-ip-filter:
   - "*.lan"
   - "*.localdomain"
@@ -49,6 +78,7 @@ dns:
   - time.*.gov
   - time.*.edu.cn
   - time.*.apple.com
+  - time-ios.apple.com
   - time1.*.com
   - time2.*.com
   - time3.*.com
@@ -67,11 +97,75 @@ dns:
   - "*.time.edu.cn"
   - "*.ntp.org.cn"
   - "+.pool.ntp.org"
+  - time1.cloud.tencent.com
+  - music.163.com
+  - "*.music.163.com"
+  - "*.126.net"
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - "*.kuwo.cn"
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - y.qq.com
+  - "*.y.qq.com"
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+  - "*.xiami.com"
+  - "*.music.migu.cn"
+  - music.migu.cn
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
+  - msftconnecttest.com
+  - msftncsi.com
+  - localhost.ptlogin2.qq.com
+  - localhost.sec.qq.com
+  - "+.srv.nintendo.net"
+  - "*.n.n.srv.nintendo.net"
+  - "+.stun.playstation.net"
+  - xbox.*.*.microsoft.com
+  - "*.*.xboxlive.com"
+  - xbox.*.microsoft.com
+  - xnotify.xboxlive.com
+  - "+.battlenet.com.cn"
+  - "+.wotgame.cn"
+  - "+.wggames.cn"
+  - "+.wowsgame.cn"
+  - "+.wargaming.net"
+  - proxy.golang.org
   - stun.*.*
   - stun.*.*.*
   - "+.stun.*.*"
   - "+.stun.*.*.*"
   - "+.stun.*.*.*.*"
+  - "+.stun.*.*.*.*.*"
+  - heartbeat.belkin.com
+  - "*.linksys.com"
+  - "*.linksyssmartwifi.com"
+  - "*.router.asus.com"
+  - mesu.apple.com
+  - swscan.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - stun.l.google.com
+  - "+.nflxvideo.net"
+  - "*.square-enix.com"
+  - "*.finalfantasyxiv.com"
+  - "*.ffxiv.com"
+  - "*.ff14.sdo.com"
+  - ff.dorado.sdo.com
+  - "*.mcdn.bilivideo.cn"
+  - "+.media.dssott.com"
+  - shark007.net
 
 
 proxy-providers:
@@ -82,14 +176,14 @@ proxy-providers:
     path: "./proxy_provider/vvip-free.yaml"
     health-check:
       enable: true
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: http://www.gstatic.com/generate_204
       interval: 180
   VVIP-IPTUNNELS-VIP:
     type: file
     path: "./proxy_provider/vvip-vip.yaml"
     health-check:
       enable: true
-      url: https://cp.cloudflare.com/generate_204
+      url: http://www.gstatic.com/generate_204
       interval: 180
   VVIP-IPTUNNELS-FOOL:
     type: http
@@ -98,7 +192,7 @@ proxy-providers:
     path: "./proxy_provider/vvip-fool.yaml"
     health-check:
       enable: true
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: http://www.gstatic.com/generate_204
       interval: 180
       
 rule-providers:
