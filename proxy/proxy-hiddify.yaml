@@ -1,8 +1,6 @@
 vless://6766d5e4-7f29-459b-9b5e-c9688b352366@ilmupedia.mdevz.biz.id:443/?type=ws&encryption=none&host=sg-fless.pages.dev&path=%2Ffless&security=tls&sni=sg-fless.pages.dev&fp=randomized#sg-fless.pages.dev
 
-#Clash free
 
-proxies:
 - name: Incapsula ID net1.zxv.biz.id
   server: ilmupedia.mdevz.biz.id
   port: 443
