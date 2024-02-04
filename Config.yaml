@@ -1,70 +1,9 @@
-port: 7890
-socks-port: 7891
-redir-port: 7892
-mixed-port: 7893
-tproxy-port: 7895
-geodata-mode: true
-geodata-loader: memconservative
-tcp-concurrent: true
-find-process-mode: 'off'
-allow-lan: true
-bind-address: "*"
-mode: rule
-log-level: silent
-ipv6: false
-unified-delay: false
-global-client-fingerprint: none
-keep-alive-interval: 15
-external-controller: 0.0.0.0:9090
-external-ui: "/usr/share/openclash/ui"
-secret: "123456"
-profile:
-  store-selected: true
-  store-fake-ip: false
-sniffer:
-  enable: true
-  parse-pure-ip: true
-  override-destination: false
-  sniff:
-    TLS:
-      ports: [443, 8443]
-    HTTP:
-      ports: [80, 8080-8880]
-      override-destination: true
-  force-domain:
-  - "+.netflix.com"
-  - "+.nflxvideo.net"
-  - "+.amazonaws.com"
-  - "+.media.dssott.com"
-  skip-domain:
-  - "+.apple.com"
-  - Mijia Cloud
-  - "+.jd.com"
-  - dlg.io.mi.com
 dns:
   enable: true
+  ipv6: true
+  enhanced-mode: redir-host
   listen: 0.0.0.0:7874
-  ipv6: false
-  prefer-h3: false
-  use-hosts: true
-  default-nameserver:
-  - 1.1.1.1
-  - 1.0.0.1
-  - 8.8.8.8
-  - 8.8.4.4
-  - 192.168.8.1
-  enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  nameserver:
-  - 1.1.1.1
-  - 8.8.8.8
-  - 9.9.9.9
-  - 192.168.8.1
-  nameserver-policy:
-  geosite:oisd-full,rule-ads: rcode://success
-  proxy-server-nameserver:
-  - 1.0.0.1
-  - 8.8.4.4
   fake-ip-filter:
   - "*.lan"
   - "*.localdomain"
@@ -78,7 +17,6 @@ dns:
   - time.*.gov
   - time.*.edu.cn
   - time.*.apple.com
-  - time-ios.apple.com
   - time1.*.com
   - time2.*.com
   - time3.*.com
@@ -165,8 +103,88 @@ dns:
   - ff.dorado.sdo.com
   - "*.mcdn.bilivideo.cn"
   - "+.media.dssott.com"
+  - time-ios.apple.com
   - shark007.net
-
+  fallback-filter:
+    geoip: true
+    geoip-code: ID
+    ipcidr:
+    - 0.0.0.0/8
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.16.0.0/12
+    - 192.0.0.0/24
+    - 192.0.2.0/24
+    - 192.88.99.0/24
+    - 192.168.0.0/16
+    - 198.18.0.0/15
+    - 198.51.100.0/24
+    - 203.0.113.0/24
+    - 224.0.0.0/4
+    - 240.0.0.0/4
+    - 255.255.255.255/32
+    domain:
+    - "+.google.com"
+    - "+.facebook.com"
+    - "+.youtube.com"
+    - "+.githubusercontent.com"
+    - "+.googlevideo.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - msftconnecttest.com
+    - msftncsi.com
+    - "+.*"
+  default-nameserver:
+  - 8.8.8.8
+  - 8.8.4.4
+  - 1.1.1.1
+  - 1.0.0.1
+  - 9.9.9.9
+  - 149.112.112.112
+  - 208.67.222.222
+  - 208.67.220.220
+  - 185.228.168.9
+  - 185.228.169.168
+  - 76.76.2.0
+  - 76.76.10.0
+  - 94.140.14.140
+  - 94.140.14.141
+  - 172.105.216.54
+  nameserver:
+  - 1.1.1.1
+  - 8.8.8.8
+  - 9.9.9.9
+  fallback:
+  - 1.1.1.1
+  - 8.8.8.8
+  - 9.9.9.9
+redir-port: 7892
+tproxy-port: 7895
+port: 7890
+socks-port: 7891
+mixed-port: 7893
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: reyre
+bind-address: "*"
+external-ui: "/usr/share/openclash/ui"
+ipv6: false
+tun:
+  enable: true
+  stack: system
+  auto-route: false
+  auto-detect-interface: false
+  dns-hijack:
+  - tcp://8.8.8.8:53
+  - tcp://8.8.4.4:53
+profile:
+  store-selected: true
+  store-fake-ip: true
+tcp-concurrent: true
 
 proxy-providers:
   VVIP-IPTUNNELS-FREE:
@@ -200,31 +218,31 @@ rule-providers:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_whatsapp.yaml
-    path: "./rule_whatsapp.yaml"
+    path: "./rule_provider/rule_whatsapp.yaml"
     interval: 86400
   #rule_basicads:
     #type: http
     #behavior: classical
     #url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_basicads.yaml
-    #path: "./rule_basicads.yaml"
+    #path: "./rule_provider/rule_basicads.yaml"
     #interval: 86400
   rule_portgames:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_portgames.yaml
-    path: "./rule_portgames.yaml"
+    path: "./rule_provider/rule_portgames.yaml"
     interval: 86400
   rule_bank-id:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_bank-id.yaml
-    path: "./rule_bank-id.yaml"
+    path: "./rule_provider/rule_bank-id.yaml"
     interval: 86400
   rule_indo:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/marieff/cfaku/main/rules/rule_indo.yaml
-    path: "./rule_indo.yaml"
+    path: "./rule_provider/rule_indo.yaml"
     interval: 86400
     
 proxy-groups:
