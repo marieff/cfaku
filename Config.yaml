@@ -205,15 +205,6 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 180
-  VVIP-IPTUNNELS-FOOL:
-    type: http
-    url: "http://fool.azurewebsites.net/get?cc=SG,ID&mode=cdn&pass=74a12fd6&format=clash&cdn=ilmupedia.mdevz.biz.id"
-    interval: 3600
-    path: "./proxy_provider/vvip-fool.yaml"
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 180
       
 rule-providers:
   rule_whatsapp:
@@ -263,7 +254,6 @@ proxy-groups:
   use:
   - VVIP-IPTUNNELS-FREE
   - VVIP-IPTUNNELS-VIP
-  - VVIP-IPTUNNELS-FOOL
   url: http://www.gstatic.com/generate_204
   interval: 300
 #- name: AdBlock
@@ -288,7 +278,6 @@ proxy-groups:
   use:
   - VVIP-IPTUNNELS-FREE
   - VVIP-IPTUNNELS-VIP
-  - VVIP-IPTUNNELS-FOOL
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: FALLBACK
@@ -298,7 +287,6 @@ proxy-groups:
   use:
   - VVIP-IPTUNNELS-FREE
   - VVIP-IPTUNNELS-VIP
-  - VVIP-IPTUNNELS-FOOL
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: BEST-PING 
@@ -309,7 +297,6 @@ proxy-groups:
   use:
   - VVIP-IPTUNNELS-FREE
   - VVIP-IPTUNNELS-VIP
-  - VVIP-IPTUNNELS-FOOL
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: PROXY-CHAIN
