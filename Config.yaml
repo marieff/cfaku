@@ -197,7 +197,9 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
       interval: 180
   VVIP-IPTUNNELS-VIP:
-    type: file
+    type: http
+    url: "https://raw.githubusercontent.com/marieff/cfaku/main/proxy/vvip-hiddify.yaml"
+    interval: 3600
     path: "./proxy_provider/vvip-vip.yaml"
     health-check:
       enable: true
