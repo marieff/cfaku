@@ -198,7 +198,7 @@ proxy-providers:
       interval: 180
   VVIP-IPTUNNELS-VIP:
     type: http
-    url: "https://raw.githubusercontent.com/marieff/cfaku/main/proxy/vvip-hiddify.yaml"
+    url: "https://raw.githubusercontent.com/marieff/cfaku/main/proxy/proxy-hiddify.yaml"
     interval: 3600
     path: "./proxy_provider/vvip-vip.yaml"
     health-check:
