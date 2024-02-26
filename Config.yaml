@@ -164,6 +164,12 @@ proxy-groups:
   - FALLBACK
 
 rules:
+- DST-PORT,7895,REJECT
+- DST-PORT,7892,REJECT
+- DST-PORT,7895,REJECT
+- DST-PORT,7892,REJECT
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+
 # # fix dnsleak
 - IP-CIDR,127.0.0.1/32,REJECT,no-resolve
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
