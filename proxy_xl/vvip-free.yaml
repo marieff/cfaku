@@ -1,6 +1,6 @@
 proxies:
 - name: Incapsula ID net1.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -15,7 +15,7 @@ proxies:
         Host: net1.zxv.biz.id
   udp: true
 - name: Zhejiang ID net2.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -30,7 +30,7 @@ proxies:
         Host: net2.zxv.biz.id
   udp: true
 - name: Tencent SG net3.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -45,7 +45,7 @@ proxies:
         Host: net3.zxv.biz.id
   udp: true
 - name: Linode SG net4.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -60,7 +60,7 @@ proxies:
         Host: net4.zxv.biz.id
   udp: true
 - name:    Hosthatch SG net5.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -75,7 +75,7 @@ proxies:
         Host: net5.zxv.biz.id
   udp: true
 - name: Global SG net6.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -90,7 +90,7 @@ proxies:
         Host: net6.zxv.biz.id
   udp: true
 - name: Webhorizon SG net7.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -105,7 +105,7 @@ proxies:
         Host: net7.zxv.biz.id
   udp: true
 - name: Centerhop SG net8.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -120,7 +120,7 @@ proxies:
         Host: net8.zxv.biz.id
   udp: true
 - name: Alibaba SG net9.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -135,7 +135,7 @@ proxies:
         Host: net9.zxv.biz.id
   udp: true
 - name: Digital Ocean SG net10.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -150,7 +150,7 @@ proxies:
         Host: net10.zxv.biz.id
   udp: true
 - name: M247 SG net16.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -165,7 +165,7 @@ proxies:
         Host: net16.zxv.biz.id
   udp: true
 - name: Amazon SG net17.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -180,7 +180,7 @@ proxies:
         Host: net17.zxv.biz.id
   udp: true
 - name: Vultr SG net18.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -195,7 +195,7 @@ proxies:
         Host: net18.zxv.biz.id
   udp: true
 - name: Datacamp SG net19.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -210,7 +210,7 @@ proxies:
         Host: net19.zxv.biz.id
   udp: true
 - name:    HostHatch SG net20.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -225,7 +225,7 @@ proxies:
         Host: net20.zxv.biz.id
   udp: true
 - name: Akile SG net21.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -240,7 +240,7 @@ proxies:
         Host: net21.zxv.biz.id
   udp: true
 - name: AOFEI SG net22.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -255,7 +255,7 @@ proxies:
         Host: net22.zxv.biz.id
   udp: true
 - name: Akari SG net23.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -270,7 +270,7 @@ proxies:
         Host: net23.zxv.biz.id
   udp: true
 - name: BELNET SG net24.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -285,7 +285,7 @@ proxies:
         Host: net24.zxv.biz.id
   udp: true
 - name: GCore SG net25.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -300,7 +300,7 @@ proxies:
         Host: net25.zxv.biz.id
   udp: true
 - name:    Hostinger SG net26.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -315,7 +315,7 @@ proxies:
         Host: net26.zxv.biz.id
   udp: true
 - name: Kaopu SG net27.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -330,7 +330,7 @@ proxies:
         Host: net27.zxv.biz.id
   udp: true
 - name: Oracle Corporation SG net28.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -345,7 +345,7 @@ proxies:
         Host: net28.zxv.biz.id
   udp: true
 - name: Google SG net29.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -360,7 +360,7 @@ proxies:
         Host: net29.zxv.biz.id
   udp: true
 - name: Tencet SG net30.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -375,7 +375,7 @@ proxies:
         Host: net30.zxv.biz.id
   udp: true
 - name: Linode SG net32.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -390,7 +390,7 @@ proxies:
         Host: net32.zxv.biz.id
   udp: true
 - name: Neustar SG net33.zxv.biz.id
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
@@ -405,7 +405,7 @@ proxies:
         Host: net33.zxv.biz.id
   udp: true
 - name: Akamai ID x1.merkuri.cloud
-  server: ilmupedia.mdevz.biz.id
+  server: quiz.vidio.com
   port: 443
   type: vless
   uuid: e2443e49-e0ce-4628-808f-76469b53cf66
